@@ -1,0 +1,110 @@
+###
+GET http://localhost:4000
+Content-Type: application/json
+
+
+###
+GET http://localhost:4000/device/register
+Content-Type: application/json
+
+
+{
+     "adminID":"1145sla4563276789ran2",
+      "deviceID":"25hj13289089deviceern2",
+      "deviceName":"dell24rn2",
+      "macID":"clmca34511rn2"
+}
+
+###
+GET http://localhost:4000/device/findalldevice
+Content-Type: application/json
+
+
+### user register
+POST http://localhost:4000/user/register
+Content-Type: application/json
+
+{
+      "email":"ranjit@gmail2.com",
+      "uid":"677gdsahgt",
+      "password":"11234453",
+      "description":"This is increadeble way",
+      "compneyinfo":{
+            "description":"This is incredible.",
+            "name":"ranjan",
+            "email":"search"
+      }
+     
+}
+
+### update device id in user
+PUT  http://localhost:4000/user/deviceupdate
+Content-Type: application/json
+
+{
+      "deviceId":"605d7526136fdb17dcae28aa",
+      "uid":"677gdsahgt"
+      
+}
+
+### find all user
+GET  http://localhost:4000/user/finduser
+Content-Type: application/json
+
+
+### find user companey info
+POST  http://localhost:4000/user/findusercompaney
+Content-Type: application/json
+
+{
+      "uid":"677gdsahgt"
+}
+
+### delete user by email
+DELETE http://localhost:4000/user/userdelete
+Content-Type: application/json
+
+{
+      "email":"ranjit@gmail.com"
+}
+
+
+### find device in user array
+
+POST http://localhost:4000/user/userdevice
+Content-Type: application/json
+
+{
+      "uid":"677gdsahgt"
+}
+
+
+### find user through device id
+POST http://localhost:4000/device/devicesaleuser
+Content-Type: application/json
+
+{
+      "id":"605d7526136fdb17dcae28aa"
+}
+
+
+### device delete from user
+
+PUT http://localhost:4000/user/deleteDevice
+Content-Type: application/json
+
+{
+     "deviceId":"605d7526136fdb17dcae28aa",
+      "uid":"677gdsahgt"
+}
+
+### delete device 
+DELETE http://localhost:4000/device/deletedevice
+Content-Type: application/json
+
+{
+      "deviceId":"605c9613b4b5933244853e51"
+}
+
+
+
