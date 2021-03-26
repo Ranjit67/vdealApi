@@ -15,7 +15,7 @@ Content-Type: application/json
       "macID":"clmca34511rn2"
 }
 
-###
+### find all device
 GET http://localhost:4000/device/findalldevice
 Content-Type: application/json
 
