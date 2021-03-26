@@ -1,0 +1,31 @@
+### customer register
+POST http://localhost:4000/customer/register
+Content-Type: application/json
+
+{
+    "email":"ranjan@gmail.com",
+    "password":"12345",
+    "uid":"ty67127389fgr",
+    "compneyUserId":"605d5835f21ac21ae44b28a3"
+}
+
+### from which compney customer purchese and what are the device he has
+POST http://localhost:4000/customer/findcustomerCompaney
+Content-Type: application/json
+
+{
+     "customerUid":"ty67127389fgr"
+}
+
+### 605d7526136fdb17dcae28aa
+PUT http://localhost:4000/customer/deviceupdate
+Content-Type: application/json
+
+{
+    "deviceId":"605d7526136fdb17dcae28aa", 
+    "uid":"ty67127389fgr"
+}
+
+
+
+

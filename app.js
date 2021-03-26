@@ -29,6 +29,9 @@ app.use("/device", Device);
 const User = require("./route/users");
 app.use("/user", User);
 
+const Customer = require("./route/customer");
+app.use("/customer", Customer);
+
 app.use(async (req, res, next) => {
   next(createError.NotFound());
 });
